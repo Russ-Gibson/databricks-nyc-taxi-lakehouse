@@ -10,7 +10,7 @@ The solution follows Medallion architecture principles by separating ingestion, 
 
 Source Dataset:
 samples.nyctaxi.trips
-
+``
 Flow:
 
 Bronze → Raw ingestion
@@ -65,6 +65,19 @@ Gold → Aggregated business metrics
 ### Validation
 
 * Quality checks
+
+### Audit Logging
+
+Tracks every pipeline execution, including:
+
+- Pipeline Name
+- Layer
+- Runtime
+- Rows Read
+- Rows Written
+- Success/Failure Status
+- Error Message
+- Execution Timestamp
 
 ---
 
